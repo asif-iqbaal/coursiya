@@ -48,19 +48,19 @@ export default function Purchased() {
             <div className="flex  flex-col w-screen h-[100vh]">
                 <div
                     onClick={handleBack} className=" h-[10vh] cursor-pointer bg-black text-white w-[100px] m-2 rounded-xl flex justify-center items-center text-2xl font-bold">back</div>
-                <div className="w-screen h-[90vh] flex ">
-                    <div className="w-3/4 flex justify-evenly h-full ">
-                        <img src={imageLink} alt="image" className="h-4/5 w-2/3 p-7 rounded-lg" />
+                <div className="w-screen md:h-[90vh] flex md:flex-row   flex-col ">
+                    <div className="md:w-3/4 flex justify-evenly h-full  md:flex-row  flex-col ">
+                        <img src={imageLink} alt="image" className="md:h-4/5 md:w-2/3 p-7 rounded-lg" />
                         <div ><h2 className="text-4xl font-bold tracking-tight my-2">{tittle}</h2>
                             <p className="text-lg  my-2">{description}</p>
                             <p className="w-1/2 p-3 m-3 text-center bg-blue-500 my-2 text-white font-semibold  rounded-lg">{price}</p>
                         </div>
                     </div>
-                    <div className="w-1/3">
+                    <div className="md:w-1/3">
                         <h1 className="text-4xl font-bold text-blue-500 tracking-tight">Get Course</h1>
                         <form
                             onSubmit={handleGet}
-                            className="flex flex-col w-4/5 h-5/6 border-2 rounded-lg p-10">
+                            className="flex flex-col md:w-4/5 md:h-5/6 border-2 rounded-lg p-10">
                             <label htmlFor="username "
                                 className="text-2xl m-3 font-semibold tracking-wide">Username</label>
                             <input
