@@ -73,8 +73,8 @@ export default function Profile() {
     return (
         <>
             <Navigation />
-            <div className="w-screen h-screen flex p-10 md:flex-row flex-col ">
-                <div className="md:w-2/5 flex flex-col justify-evenly">
+            <div className="w-screen h-screen flex p-10 md:flex-row flex-col pt-[7vh] ">
+                <div className="md:w-2/5 flex flex-col justify-evenly h-2/3">
                     <h2 className="md:text-6xl font-extrabold tracking-tight"> Welcome {username || "Oops No User"}</h2>
                     <p className="md:text-xl font-semibold">Welcome to our COURSiya the Learning and Earning platform .
                         COURsiyA is powered by a team of passionate educators, developers, and support staff who are dedicated to creating a seamless learning experience. Our team is constantly innovating to meet the needs of our global student community.

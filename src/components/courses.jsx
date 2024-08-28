@@ -50,10 +50,10 @@ export default function Courses(){
         <>
         
         <Navigation />
-       { isAdmin && <div className="w-screen bg-blue-600 ">
+       { isAdmin && <div className="w-screen bg-white md:pt-[7vh] ">
           <Link to="/addcourse"><button className="md:w-1/5 m-2 p-2 md:h-20 rounded text-white md:text-4xl font-bold bg-blue-500">ADD YOURS</button></Link> 
        </div>}
-              {!loading && <div className=" flex   w-screen h-auto justify-evenly flex-wrap pt-3 bg-blue-500">
+              {!loading && <div className=" flex   w-screen h-auto justify-evenly flex-wrap pt-[7vh] bg-white">
                 {shuffledCourses.map((course, index) => (
                 <div className="p-5"
                 onClick={()=>handleCardClick(course)}>

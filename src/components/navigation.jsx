@@ -39,9 +39,9 @@ export default function Navigation() {
 
     return (
         <div>
-            {isLargeScreen && <div className="flex h-[9vh] justify-evenly w-screen ">
+            {isLargeScreen && <div className="flex h-[7vh] justify-evenly w-screen fixed z-10 bg-white ">
                 <div className="w-1/5 h-full text-center">
-                    <h2 className="text-6xl font-bold text-blue-500 shadow-inner">COURsiyA</h2>
+                    <h2 className="text-4xl font-bold text-blue-800 h-full shadow-inner flex justify-center items-center">COURsiyA</h2>
                 </div>
                 <div className="w-3/6 flex justify-evenly items-center  ">
                     <ul className="flex justify-evenly items-center w-1/2 h-full">
@@ -81,7 +81,7 @@ export default function Navigation() {
             {
                 !isLargeScreen &&
                 <div className="h-auto">
-                    <div className=" h-[7vh] text-center flex justify-between">
+                    <div className=" h-[7vh] text-center flex justify-between items-center px-3 ">
                         <h2 className="text-2xl font-bold text-blue-500 shadow-inner">COURsiyA</h2>
                         <h2 onClick={handleOpen}>
                             <Hamburger />
@@ -99,8 +99,8 @@ export default function Navigation() {
                         </div>
                         <div className="flex  flex-col justify-end pr-3 items-end">
                             {item ? (
-                                <div className="flex items-center m-2 md:m-0">
-                                    <Link to='/profile'> <FaUserCircle className="text-lg text-blue-500 cursor-pointer" /></Link>
+                                <div className="flex items-center  md:m-0">
+                                    <Link to='/profile'> <button className=" px-1 bg-blue-600 rounded-sm mb-1 text-white font-semibold">Profile</button> </Link>
                                     {/* <button 
                             onClick={handleLogout} 
                             className="ml-4 cursor-pointer border-4 border-red-500 text-red-500 w-24 h-12 font-semibold text-lg flex justify-center items-center">

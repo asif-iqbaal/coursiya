@@ -11,12 +11,13 @@ import Courses from './components/courses';
 import AddCourse from './components/addCourses';
 import Profile from './components/profile';
 import Purchased from './components/purchase';
+import ScrollToTop from './components/scroll';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
-        {/* <Navigation /> */}
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -28,7 +29,6 @@ function App() {
           <Route path='/course/:course_id' element={<Purchased />} />
         </Routes>
         <Notification />
-        {/* <Footer /> */}
       </Router>
     </AuthProvider>
   );

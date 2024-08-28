@@ -58,9 +58,9 @@ export default function AddCourse() {
         <>
             <div className="h-[100vh] bg-gray-200 overflow-hidden">
 
-                <div className="md:text-6xl font-bold text-blue-500 text-center md:h-1/5 bg-gray-200 ">
+                <div className="md:text-6xl text-2xl font-bold text-blue-500 text-center md:h-1/5 bg-gray-200 ">
                     <div
-                        onClick={handleBack} className=" md:h-[10vh] h-[5vh] cursor-pointer bg-black m-3 text-white w-[100px]  rounded-xl flex justify-center items-center md:text-2xl font-bold">back
+                        onClick={handleBack} className=" md:h-[10vh] h-[5vh] cursor-pointer bg-black m-3 text-white w-[100px]  rounded-xl flex justify-center items-center md:text-2xl text-sm font-bold">back
                     </div>Add Courses </div>
                 <div className=" h-4/5 w-screen  flex justify-center items-center bg-gray-200">
                     <form onSubmit={onSubmit}

@@ -70,77 +70,84 @@ export default function SignUp() {
     <>
       <div className="w-screen h-screen flex md:flex-row flex-col">
         <div className="md:w-2/3 h-full overflow-hidden ">
-          <img src={signup} alt="signup" className="md:h-full " />
+          <img src={signup} alt="signup" className="w-full h-full object-cover " />
         </div>
-        <div className="md:w-1/3 h-full flex flex-col justify-center items-center">
+        <div className="md:w-1/3 h-full flex flex-col justify-center items-center shadow-lg">
           <div className=" text-center md:text-6xl text-4xl font-extrabold text-blue-500 tracking-tight p-3">COURSiya</div>
           <div className=" text-center md:text-4xl text-2xl font-extrabold text-black tracking-tight p-2">Create an account</div>
           {hide && <div
             onClick={handleHide}
-            className="cursor-pointer w-2/3 h-1/6 rounded-lg bg-blue-500 text-white m-5 content-center
-                text-center text-4xl font-bold">Admin</div>}
+            className="cursor-pointer w-2/3 md:w-3/4 md:h-20  h-12 rounded-lg bg-blue-500 text-white my-3 text-center content-center text-2xl md:text-4xl font-bold transition transform hover:scale-105">Admin</div>}
           {hideAdmin && <form
             onSubmit={handleAdminSignup} className="flex flex-col w-4/5 md:h-2/3 border-2 rounded-lg md:p-10">
-            <label htmlFor="username "
-              className="text-2xl m-3  font-semibold tracking-wide">Username</label>
-            <input
-              className="h-12 p-4 text-lg border-2"
-              name="username"
-              type="text"
-              required
-              placeholder="COURsiya"
-              value={username}
-              onChange={onChange}
-            />
-            <label htmlFor="username"
-              className="text-2xl m-3 font-semibold tracking-wide">Password</label>
-            <input
-              className="h-12 p-4 text-lg border-2"
-              name="password"
-              type="text"
-              required
-              placeholder="********"
-              value={password}
-              onChange={onChange}
-            />
-            <button
-              className="bg-blue-500 h-14  p-4 rounded-lg my-3">Submit</button>
-            <p className=" text-center font-semibold text-gray-400 mt-3
-                         ">you are sign in into COURsiya world best cousrse selling and purchased website have a great exprience.</p>
+            <label htmlFor="username" className="text-xl md:text-2xl m-2 font-semibold">
+                Username
+              </label>
+              <input
+                className="h-10 md:h-12 p-2 text-lg border-2 rounded focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                name="username"
+                type="text"
+                required
+                placeholder="User Username"
+                value={username}
+                onChange={onChange}
+              />
+              <label htmlFor="password" className="text-xl md:text-2xl m-2 font-semibold">
+                Password
+              </label>
+              <input
+                className="h-10 md:h-12 p-2 text-lg border-2 rounded focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                name="password"
+                type="password"
+                required
+                placeholder="********"
+                value={password}
+                onChange={onChange}
+              />
+              <button className="bg-blue-500 h-10 md:h-14 mt-4 rounded-lg text-white font-semibold hover:bg-blue-600 transition-all">
+                Submit
+              </button>
+              <p className="text-center text-gray-500 mt-4">
+                You are signing into COURsiya, the world's best course selling and purchasing website. Have a great experience.
+              </p>
           </form>}
           {hideUser && <form
             onSubmit={handleUserSignup}
             className="flex flex-col w-4/5 md:h-2/3 border-2 rounded-lg md:p-10">
-            <label htmlFor="username "
-              className="text-2xl m-3 font-semibold tracking-wide">Username</label>
-            <input
-              className="h-12 p-4 text-lg border-2"
-              name="username"
-              type="text"
-              required
-              placeholder="COURsiya"
-              value={username}
-              onChange={onChange}
-            />
-            <label htmlFor="username"
-              className="text-2xl font-semibold tracking-wide m-3">Password</label>
-            <input
-              className="h-12 p-4 text-lg border-2"
-              name="password"
-              type="text"
-              required
-              placeholder="********"
-              value={password}
-              onChange={onChange}
-            />
-            <button
-              className="bg-blue-500 h-14  p-4 my-3 rounded-lg">Submit</button>
-            <p className=" text-center font-semibold text-gray-400 mt-3
-                         ">you are sign in into COURsiya world best cousrse selling and purchased website have a great exprience.</p>
+            <label htmlFor="username" className="text-xl md:text-2xl m-2 font-semibold">
+                Username
+              </label>
+              <input
+                className="h-10 md:h-12 p-2 text-lg border-2 rounded focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                name="username"
+                type="text"
+                required
+                placeholder="User Username"
+                value={username}
+                onChange={onChange}
+              />
+              <label htmlFor="password" className="text-xl md:text-2xl m-2 font-semibold">
+                Password
+              </label>
+              <input
+                className="h-10 md:h-12 p-2 text-lg border-2 rounded focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                name="password"
+                type="password"
+                required
+                placeholder="********"
+                value={password}
+                onChange={onChange}
+              />
+              <button className="bg-blue-500 h-10 md:h-14 mt-4 rounded-lg text-white font-semibold hover:bg-blue-600 transition-all">
+                Submit
+              </button>
+              <p className="text-center text-gray-500 mt-4">
+                You are signing into COURsiya, the world's best course selling and purchasing website. Have a great experience.
+              </p>
           </form>}
           {hide && <div
             onClick={handleHide2}
-            className="cursor-pointer w-2/3 h-1/6 rounded-lg bg-blue-500 text-white m-5 content-center text-center text-4xl font-bold">User</div>}
+            className="cursor-pointer w-2/3 md:w-3/4 md:h-20 h-12 rounded-lg bg-blue-500 text-white md:m-5 content-center text-center md:text-4xl text-2xl font-bold transition transform hover:scale-105">User</div>}
         </div>
       </div>
     </>
